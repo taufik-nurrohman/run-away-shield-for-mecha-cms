@@ -1,0 +1,8 @@
+Title: Run Away
+Author: Taufik Nurrohman
+URL: http://mecha-cms.com
+Version: 1.0.0
+
+====
+
+Minimalist one column shield for personal blog.

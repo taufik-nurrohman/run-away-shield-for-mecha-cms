@@ -1,0 +1,326 @@
+/* GENERAL */
+
+.blog-wrapper {
+  width:700px;
+  padding-top:264px;
+  margin: 0 auto;
+  background:white url('../object/run-away.png') no-repeat 50% 0;
+  position:relative;
+}
+
+.main-wrapper {padding:5%}
+
+
+/* LOGIN */
+
+.form-login {padding:5% 0}
+.form-login button .fa {display:none}
+
+/* HEADER */
+
+.blog-header {
+  position:absolute;
+  top:0;
+  right:0;
+  left:0;
+  padding:5%;
+  text-shadow:0 1px 4px rgba(0,0,0,.8);
+}
+
+.blog-header h1 {
+  margin:0;
+  padding:0;
+  font-size:250%;
+  font-family:"Playball","Droid Serif",Georgia,"URW Bookman L",Serif;
+  color:white;
+  letter-spacing:-1px;
+}
+
+.blog-header h1 a {color:inherit}
+
+.blog-header .blog-slogan {
+  font-style:italic;
+  color:#E0FF17;
+}
+
+
+/* NAVIGATION */
+
+.blog-navigation {
+  background:black url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAnBAMAAAA8zj+RAAAAD1BMVEUCAgIXFxcNDQ0SEhIICAgxJ1DyAAAAFUlEQVQI12MQQIMGKFABDTqgQAwAAL8+BJH53i/DAAAAAElFTkSuQmCC') repeat-x 0 0;
+  color:white;
+  height:3em;
+  line-height:3em;
+  position:relative;
+}
+
+.blog-navigation ul,
+.blog-navigation li {
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+.blog-navigation li {
+  float:left;
+  display:inline;
+  position:relative;
+}
+
+.blog-navigation a {
+  display:block;
+  background:black url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAnBAMAAAA8zj+RAAAAD1BMVEUCAgIXFxcNDQ0SEhIICAgxJ1DyAAAAFUlEQVQI12MQQIMGKFABDTqgQAwAAL8+BJH53i/DAAAAAElFTkSuQmCC') repeat-x 0 0;
+  color:inherit;
+  padding:0 1em;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.blog-navigation a:focus,
+.blog-navigation a:hover,
+.blog-navigation li:hover > a {
+  background:#F2E336 url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAnAgMAAACzjsoxAAAADFBMVEXz5D3z5kjz5UPy5DjP+Md7AAAAEklEQVQI12NwwIANGBAXOIAOAb3dDYGHHX7TAAAAAElFTkSuQmCC') repeat-x 0 0;
+  color:black;
+}
+
+.blog-navigation .selected a {
+  background:#F2D14B url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAnAgMAAACzjsoxAAAADFBMVEXz01Lz1Ffy0k3z1lu4sLCaAAAAE0lEQVQI12M4gAYdsEDsoAETAgBYbA2BY5qs/wAAAABJRU5ErkJggg==') repeat-x 0 0;
+  color:black;
+}
+
+.blog-navigation li ul {
+  position:absolute;
+  top:100%;
+  left:0;
+  z-index:9999;
+  background-color:black;
+  width:200px;
+  -webkit-box-shadow:0 1px 6px rgba(0,0,0,.6);
+  -moz-box-shadow:0 1px 6px rgba(0,0,0,.6);
+  box-shadow:0 1px 6px rgba(0,0,0,.6);
+  display:none;
+}
+
+.blog-navigation li ul ul {
+  top:0;
+  left:100%;
+}
+
+.blog-navigation li li {
+  float:none;
+  display:block;
+  line-height:2.5em;
+  height:2.5em;
+  font-size:96%;
+}
+
+.blog-navigation li li li {font-size:100%}
+.no-js .blog-navigation li:hover > ul {display:block}
+
+.blog-navigation .blog-navigation-toggle,
+.blog-navigation .blog-navigation-toggle:focus,
+.blog-navigation .blog-navigation-toggle:hover {
+  position:absolute;
+  top:0;
+  right:0;
+  width:3em;
+  height:3em;
+  background:none;
+  color:white;
+  padding:0;
+}
+
+.blog-navigation .blog-navigation-toggle {display:none}
+
+.blog-navigation .blog-navigation-toggle span {
+  display:block;
+  border-top:.2em solid;
+  margin:.3em .8em 0;
+}
+
+.blog-navigation .blog-navigation-toggle span:first-child {margin-top:.98em}
+.blog-navigation .blog-navigation-toggle.active span {color:#F2E336}
+
+
+/* POST */
+
+.post-body {margin-top:1.3846153846153846em}
+.post-footer {margin:5% 0}
+
+.post-index {margin:0 0 5%}
+.post-index .post-title {font-size:150%}
+
+.post-time {
+  color:#766C67;
+  border-left:4px solid #DBCEC9;
+  padding-left:.6em;
+}
+
+.page-404 .post {text-align:center}
+
+
+/* PAGER */
+
+.blog-pager {overflow:hidden}
+.blog-pager-prev {float:left}
+.blog-pager-next {float:right}
+
+.blog-pager .fa {display:none}
+
+
+/* COMMENTS */
+
+.comments {margin:5% 0 0}
+
+.comment-list {
+  list-style:none;
+  margin:0;
+  padding:0;
+  position:relative;
+}
+
+.comment {
+  margin:2px 0 0;
+  padding:1em 0;
+  border-left:5px solid transparent;
+  overflow:hidden;
+}
+
+.comment-pilot {
+  border-color:#365D98;
+  padding-left:1em;
+}
+
+.comment-intruder {
+  opacity:.4;
+  pointer-events:none;
+}
+
+.comment-avatar {
+  width:60px;
+  height:60px;
+  float:left;
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+  overflow:hidden;
+}
+
+.comment-avatar img {
+  display:block;
+  width:60px;
+  height:60px;
+  max-width:none;
+  max-height:none;
+}
+
+.comment-avatar + .comment-header,
+.comment-avatar + .comment-header + .comment-body,
+.comment-avatar + .comment-header + .comment-body + .comment-footer {
+  margin-left:60px;
+  padding-left:1.3846153846153846em;
+  overflow:hidden;
+}
+
+.comment-header,
+.comment-body {
+  margin-bottom:.5em;
+  overflow:hidden;
+}
+
+.comment-footer {text-align:right}
+
+.comment-name {
+  display:block;
+  float:left;
+  font-weight:bold;
+}
+
+.comment-time {
+  display:block;
+  float:right;
+  color:#766C67;
+}
+
+.comment-form {margin:5% 0 0 0}
+.comment-form input[name="math"] {width:4em}
+
+
+/* FOOTER */
+
+.blog-footer {
+  background-color:black;
+  color:white;
+  padding:2% 2.8%;
+  overflow:hidden;
+}
+
+.blog-footer a {color:#F2E336}
+
+.blog-footer-left {float:left}
+.blog-footer-right {float:right}
+
+.column-bottom-group {
+  margin:5% 0 0;
+  border-top:1px dashed #DBCEC9;
+}
+
+.column-bottom {margin-top:5%}
+
+
+/* WIDGETS */
+
+.widget-content {margin:1.3846153846153846em 0}
+
+.widget-search input {width:160px}
+.widget-search button {margin-left:.4em}
+
+
+/* SMALLER SCREEN */
+
+@media (max-width:846px) {
+  .blog-navigation {
+    height:auto;
+    padding-top:3em;
+  }
+  .blog-navigation li {
+    float:none;
+    display:block;
+  }
+  .blog-navigation ul {display:none}
+  .blog-navigation .blog-navigation-toggle {display:block}
+  .mobile-menu-is-active .blog-navigation ul {display:block}
+  .mobile-menu-is-active .blog-navigation ul li {height:auto}
+  .mobile-menu-is-active .blog-navigation ul ul {
+    position:static;
+    width:auto;
+    display:block !important;
+    -webkit-box-shadow:none;
+    -moz-box-shadow:none;
+    box-shadow:none;
+  }
+  .column-bottom-group .column-bottom {
+    float:none;
+    display:block;
+    width:auto;
+    margin-right:0;
+    margin-left:0;
+  }
+  .column-bottom-group .column-bottom-right {margin-top:1.3846153846153846em}
+}
+
+@media (max-width:700px) {
+  .blog-wrapper {width:auto}
+  .grid-group .grid {
+    float:none;
+    display:block;
+    width:auto;
+    margin-right:0;
+    margin-left:0;
+  }
+  .grid-group .form-label {
+    text-align:left;
+    margin-bottom:1.3846153846153846em;
+  }
+}
