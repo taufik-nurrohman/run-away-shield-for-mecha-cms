@@ -1,7 +1,5 @@
 <section class="comments">
-  <h4 class="comment-header">
-    <i class="fa fa-comments"></i> <?php echo $article->total_comments_text; ?>
-  </h4>
+  <h4 class="comment-header"><?php echo $article->total_comments_text; ?></h4>
   <ol class="comment-list">
     <?php if($article->total_comments > 0): ?>
     <?php foreach($article->comments as $comment): ?>
