@@ -11,5 +11,9 @@
   <span class="blog-pager-prev"><?php echo $pager->prev->link; ?></span>
   <span class="blog-pager-next"><?php echo $pager->next->link; ?></span>
 </nav>
+<?php else: ?>
+<article class="post post-index">
+  <div class="post-body"><?php echo Config::speak('notify_empty', array(strtolower($speak->posts))); ?></div>
+</article>
 <?php endif; ?>
 <?php include 'footer.php'; ?>
