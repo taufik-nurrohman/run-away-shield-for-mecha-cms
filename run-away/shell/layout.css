@@ -133,7 +133,7 @@
   float:none;
   display:block;
   line-height:2.5em;
-  height:2.5em;
+  height:auto;
   font-size:96%;
 }
 
@@ -302,13 +302,14 @@
   .blog-navigation {
     height:auto;
     padding-top:3em;
+    background-image:none;
   }
   .blog-navigation li {
     float:none;
     display:block;
   }
   .blog-navigation ul {display:none}
-  .blog-navigation .blog-navigation-toggle {display:block}
+  .blog-navigation .blog-navigation-toggle,
   .mobile-menu-is-active .blog-navigation ul {display:block}
   .mobile-menu-is-active .blog-navigation ul li {height:auto}
   .mobile-menu-is-active .blog-navigation ul ul {

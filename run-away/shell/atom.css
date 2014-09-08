@@ -186,8 +186,8 @@ textarea,
 button {overflow:visible}
 
 select {
-  padding-top:9px;
-  padding-bottom:9px;
+  padding-top:8px;
+  padding-bottom:8px;
 }
 
 .btn-block,
@@ -352,6 +352,13 @@ input[type="number"]::-webkit-outer-spin-button {height:auto}
 input[type="file"],
 label,select {cursor:pointer}
 
+input[type="image"] {
+  width:auto;
+  height:auto;
+  padding:0;
+  background:none;
+}
+
 option {
   margin:0;
   padding:0;
@@ -366,13 +373,15 @@ label {
 
 label input:checked + span {color:black}
 
-.form-label {
-  padding:10px 0 0 0;
+.form-label,
+.form-static {
+  display:block;
+  padding-top:10px;
+  padding-bottom:10px;
   line-height:normal;
-  text-align:right;
 }
 
-.form-static {padding-top:10px}
+.form-label {text-align:right}
 
 .no-gap .form-label > span {
   display:block;
@@ -393,6 +402,31 @@ legend {
   font-size:76%;
   line-height:0;
   overflow:visible;
+}
+
+.no-appearance,
+a.no-appearance,
+button.no-appearance,
+input.no-appearance,
+select.no-appearance,
+textarea.no-appearance {
+  -webkit-appearance:none;
+  -moz-appearance:none;
+  appearance:none;
+  margin:0;
+  padding:0;
+  border:none;
+  background:none;
+  outline:none;
+  font:inherit;
+  color:inherit;
+  text-align:inherit;
+  -webkit-border-radius:0;
+  -moz-border-radius:0;
+  border-radius:0;
+  -webkit-box-shadow:none;
+  -moz-box-shadow:none;
+  box-shadow:none;
 }
 
 

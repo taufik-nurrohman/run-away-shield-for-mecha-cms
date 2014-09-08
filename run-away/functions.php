@@ -20,10 +20,12 @@ Widget::add('tagLinks', function($connector = ', ') {
 
 // Remove all icons in status messages
 
-Notify::configure('icons', array(
-    'default' => "",
-    'success' => "",
-    'info' => "",
-    'warning' => "",
-    'error' => ""
-));
+if(strpos($config->url_current, $config->url . '/' . $config->manager->slug . '/') !== 0) {
+    Notify::configure('icons', array(
+        'default' => "",
+        'success' => "",
+        'info' => "",
+        'warning' => "",
+        'error' => ""
+    ));
+}
