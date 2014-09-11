@@ -116,6 +116,7 @@ q:after {
 /* GENERAL */
 
 html {
+  font-size:13px;
   overflow-y:scroll;
   overflow-x:hidden;
   -webkit-font-smoothing:antialiased;
@@ -123,7 +124,7 @@ html {
 }
 
 body {
-  font:normal normal 13px/1.3846153846153846em "Droid Serif",Georgia,"URW Bookman L",Serif;
+  font:normal normal 100%/1.3846153846153846em "Droid Serif",Georgia,"URW Bookman L",Serif;
   background-color:#FAF5F2;
   color:#222;
 }
@@ -141,6 +142,7 @@ h1,h2,h3,h4,h5,h6,
 .h1,.h2,.h3,.h4,.h5,.h6 {
   line-height:1;
   margin:18px 0 0;
+  margin-top:1.3846153846153846rem;
 }
 
 h1,.h1 {font-size:250%}

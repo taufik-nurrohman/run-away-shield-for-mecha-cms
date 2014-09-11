@@ -10,6 +10,8 @@
 
 .main-wrapper {padding:5%}
 
+.footnotes {margin-top:1.3846153846153846em}
+
 
 /* LOGIN */
 
@@ -187,8 +189,6 @@
 .blog-pager {overflow:hidden}
 .blog-pager-prev {float:left}
 .blog-pager-next {float:right}
-
-.blog-pager .fa {display:none}
 
 
 /* COMMENTS */
