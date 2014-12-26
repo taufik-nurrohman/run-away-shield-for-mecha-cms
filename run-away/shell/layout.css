@@ -1,4 +1,4 @@
-/* GENERAL */
+/* GENERALS */
 
 .blog-wrapper {
   width:700px;
@@ -10,7 +10,10 @@
 
 .main-wrapper {padding:5%}
 
-.footnotes {margin-top:1.3846153846153846em}
+.footnotes {
+  margin-top:1.3846153846153846em;
+  font-size:86%;
+}
 
 
 /* LOGIN */
@@ -167,7 +170,7 @@
 .blog-navigation .blog-navigation-toggle.active span {color:#F2E336}
 
 
-/* POST */
+/* POSTS */
 
 .post-body {margin-top:1.3846153846153846em}
 .post-footer {margin:5% 0}

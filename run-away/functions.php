@@ -1,8 +1,6 @@
 <?php
 
-
 // Tag links for post footer
-
 Widget::add('tagLinks', function($connector = ', ') {
     $config = Config::get();
     $speak = Config::speak();
@@ -17,9 +15,7 @@ Widget::add('tagLinks', function($connector = ', ') {
     return ! empty($links) ? $speak->tags . ': ' . implode($connector, $links) : "";
 });
 
-
 // Remove all icons in status messages
-
 if(strpos($config->url_current, $config->url . '/' . $config->manager->slug . '/') !== 0) {
     Notify::configure('icons', array(
         'default' => "",
