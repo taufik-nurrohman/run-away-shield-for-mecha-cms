@@ -10,9 +10,11 @@
 
 .main-wrapper {padding:5%}
 
-.footnotes {
-  margin-top:1.3846153846153846em;
-  font-size:86%;
+.footnotes {margin-top:1.3846153846153846em}
+.footnotes ol {font-size:86%}
+.footnotes hr {
+  border-style:solid;
+  width:7em;
 }
 
 

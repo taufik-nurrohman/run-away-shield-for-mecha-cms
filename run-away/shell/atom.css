@@ -143,6 +143,7 @@ h1,h2,h3,h4,h5,h6,
   line-height:1;
   margin:18px 0 0;
   margin-top:1.3846153846153846rem;
+  word-wrap:break-word;
 }
 
 h1,.h1 {font-size:250%}
@@ -314,23 +315,23 @@ input[type="submit"]:active,
   opacity:.9;
 }
 
-.btn-sm {
+.btn-small {
   padding:7px 10px;
   font-size:86%;
 }
 
-.input-sm,
-.textarea-sm {
+.input-small,
+.textarea-small {
   padding:7px;
   font-size:86%;
 }
 
-.select-sm {
+.select-small {
   padding:6px 8px;
   font-size:86%;
 }
 
-.textarea-sm {
+.textarea-small {
   height:90px;
   line-height:normal;
 }
@@ -519,8 +520,8 @@ ul {
   list-style:disc outside;
 }
 
-ul > li > ul,
-ol > li > ul {
+ol > li > ul,
+ul > li > ul {
   margin-left:1em;
   margin-top:0;
 }
@@ -531,13 +532,23 @@ ul > li > ol {
   margin-top:0;
 }
 
-li > p + ul,
 li > p + ol,
-li > .p + ul,
-li > .p + ol {
+li > p + ul,
+li > .p + ol,
+li > .p + ul {
   margin-top:1.3846153846153846em;
+  margin-bottom:1.3846153846153846em;
   margin-left:2.3846153846153846em;
 }
+
+li > p + ol + p,
+li > p + ul + p,
+li > p + ol + .p,
+li > p + ul + .p,
+li > .p + ol + p,
+li > .p + ul + p,
+li > .p + ol + .p,
+li > .p + ul + .p {margin-bottom:0}
 
 .list-unstyled {
   margin-left:0;
