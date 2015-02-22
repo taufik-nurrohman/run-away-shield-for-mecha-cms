@@ -19,8 +19,11 @@
 
 .widget-manager-menu {
   margin:0 0 5%;
-  line-height:2em;
-  overflow:hidden;
+  line-height:2.5em;
+  position:absolute;
+  top:0;
+  left:100%;
+  margin-left:.5em;
 }
 
 .widget-manager-menu ul,
@@ -28,26 +31,71 @@
   margin:0;
   padding:0;
   list-style:none;
-  float:left;
 }
-
-.widget-manager-menu li {width:25%}
 
 .widget-manager-menu a {
   display:block;
-  white-space:nowrap;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  height:2em;
-  line-height:2em;
+  width:2.5em;
+  height:2.5em;
+  margin:0 0 .5em;
   background-color:#F5EEEA;
   color:#7C6F6A;
-  margin:1px;
-  padding:0 .5em;
+  border:2px solid white;
+  text-align:center;
+  position:relative;
+  -webkit-box-shadow:0 1px 2px rgba(0,0,0,.1);
+  -moz-box-shadow:0 1px 2px rgba(0,0,0,.1);
+  box-shadow:0 1px 2px rgba(0,0,0,.1);
+  -webkit-border-radius:100%;
+  -moz-border-radius:100%;
+  border-radius:100%;
+}
+
+.widget-manager-menu .fa + span {
+  position:absolute;
+  top:50%;
+  right:100%;
+  z-index:999;
+  background-color:#222;
+  border-color:#222;
+  color:white;
+  height:2em;
+  line-height:2em;
+  padding:0 .6em;
+  margin:-1em .6em 0 0;
+  white-space:nowrap;
+  -webkit-box-shadow:0 4px 5px -2px rgba(0,0,0,.4);
+  -moz-box-shadow:0 4px 5px -2px rgba(0,0,0,.4);
+  box-shadow:0 4px 5px -2px rgba(0,0,0,.4);
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+  display:none;
+}
+
+.widget-manager-menu a .fa + span:before {
+  content:"";
+  display:block;
+  width:0;
+  height:0;
+  border:4px solid transparent;
+  border-left-color:inherit;
+  position:absolute;
+  top:50%;
+  right:-8px;
+  margin-top:-4px;
 }
 
 .widget-manager-menu a:focus,
-.widget-manager-menu a:hover {color:#554D48}
+.widget-manager-menu a:hover {
+  background-color:#FAF5F2;
+  color:#554D48;
+}
+
+.widget-manager-menu a:focus .fa + span,
+.widget-manager-menu a:hover .fa + span {
+  display:block;
+}
 
 .widget-manager-menu .selected a {
   background-color:#DBCEC9;
@@ -116,12 +164,6 @@ label:hover .radio,
   -moz-border-radius:3px;
   border-radius:3px;
 }
-
-
-/* MODAL */
-
-.modal,
-.modal-content {border-color:#DBCEC9}
 
 
 /* TOOLTIP */

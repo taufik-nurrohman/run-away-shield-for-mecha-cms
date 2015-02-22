@@ -1,6 +1,6 @@
 <?php
 
-// Tag links for post footer
+// Tag links for article footer
 Widget::add('tagLinks', function($connector = ', ') {
     $config = Config::get();
     $speak = Config::speak();
