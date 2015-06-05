@@ -10,7 +10,7 @@
     )); ?>
     <script>
     (function(h) {
-        h.className = h.className.replace(/(^| )no-js( |$)/,'$1js$2');
+        h.className = h.className.replace(/(^|\s)no-js(\s|$)/,'$1js$2');
     })(document.documentElement);
     </script>
     <?php Weapon::fire('shell_after'); ?>

@@ -1,9 +1,8 @@
 <?php
 
-// Tag links for article footer
-Widget::add('tagLinks', function($connector = ', ') {
+// Link generator for the current article tags
+Widget::add('tagLinks', function($connect = ', ') use($speak) {
     $config = Config::get();
-    $speak = Config::speak();
     $links = array();
     $source = $config->article->tags;
     if( ! isset($source) || ! is_object($source)) return "";
@@ -12,7 +11,8 @@ Widget::add('tagLinks', function($connector = ', ') {
             $links[] = '<a href="' . $config->url . '/' . $config->tag->slug . '/' . $tag->slug . '" rel="tag">' . $tag->name . '</a>';
         }
     }
-    return ! empty($links) ? (count($links) > 1 ? $speak->tags : $speak->tag) . ': ' . implode($connector, $links) : "";
+    $text = count($links) > 1 ? $speak->tags : $speak->tag;
+    return ! empty($links) ? $text . ': ' . implode($connect, $links) : "";
 });
 
 // Remove all icons in status messages

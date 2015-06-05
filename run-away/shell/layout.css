@@ -120,7 +120,7 @@
   left:0;
   z-index:9999;
   background-color:black;
-  width:200px;
+  width:170px;
   -webkit-box-shadow:0 1px 6px rgba(0,0,0,.6);
   -moz-box-shadow:0 1px 6px rgba(0,0,0,.6);
   box-shadow:0 1px 6px rgba(0,0,0,.6);
@@ -212,11 +212,13 @@
 }
 
 .comment {
-  margin:2px 0 0;
+  margin:0;
   padding:1em 0 1em 1em;
   border-left:5px solid transparent;
   overflow:hidden;
 }
+
+.comment + .comment {margin-top:2px}
 
 .comment-pilot {border-left-color:#DBCEC9}
 
@@ -271,10 +273,10 @@
 .comment-time {
   display:block;
   float:right;
-  color:#766C67;
+  color:#AAA;
 }
 
-.comment-form {margin:5% 0 0 0}
+.comment-form {margin:5% 12% 0 0}
 .comment-form input[name="math"] {width:4em}
 
 

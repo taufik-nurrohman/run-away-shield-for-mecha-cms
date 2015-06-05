@@ -1,4 +1,4 @@
-        <?php if( ! $manager): ?>
+        <?php if($config->page_type !== 'manager'): ?>
         <section class="grid-group column-bottom-group">
           <div class="grid span-3 column-bottom column-bottom-left">
             <div class="widget-wrapper">
