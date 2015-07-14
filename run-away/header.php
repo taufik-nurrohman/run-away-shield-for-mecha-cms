@@ -5,8 +5,8 @@
     <?php Weapon::fire('shell_before'); ?>
     <?php echo Asset::stylesheet(array(
         $config->protocol . 'fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic|Playball',
-        'shell/atom.css',
-        'shell/layout.css'
+        'assets/shell/atom.css',
+        'assets/shell/layout.css'
     )); ?>
     <script>
     (function(h) {

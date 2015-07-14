@@ -13,7 +13,7 @@
 </nav>
 <?php else: ?>
 <article class="post post-index">
-  <div class="post-body"><?php echo Config::speak('notify_empty', array(strtolower($speak->posts))); ?></div>
+  <div class="post-body"><?php echo Config::speak('notify_empty', strtolower($speak->posts)); ?></div>
 </article>
 <?php endif; ?>
 <?php include 'footer.php'; ?>

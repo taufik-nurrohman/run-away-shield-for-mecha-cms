@@ -170,16 +170,16 @@ label:hover .radio,
 }
 
 
-/* PLUGIN PAGE */
+/* ABOUT PAGE */
 
-.plugin-author {
-  background-color:#E3E8BC;
-  color:#888B74;
-}
-
-.plugin-title {
+.about-title {
   background-color:#D3D8AF;
   color:#7F8269;
+}
+
+.about-author {
+  background-color:#E3E8BC;
+  color:#888B74;
 }
 
 
