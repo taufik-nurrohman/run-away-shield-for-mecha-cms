@@ -2,13 +2,13 @@
         <section class="grid-group column-bottom-group">
           <div class="grid span-3 column-bottom column-bottom-left">
             <div class="widget-wrapper">
-              <h4 class="widget-title">Tags</h4>
+              <h4 class="widget-title"><?php echo $speak->widget->tags; ?></h4>
               <div class="widget-content">
                 <?php echo Widget::tag('LIST'); ?>
               </div>
             </div>
             <div class="widget-wrapper">
-              <h4 class="widget-title">Search</h4>
+              <h4 class="widget-title"><?php echo $speak->search; ?></h4>
               <div class="widget-content">
                 <?php echo Widget::search(); ?>
               </div>
@@ -16,7 +16,7 @@
           </div>
           <div class="grid span-3 column-bottom column-bottom-right">
             <div class="widget-wrapper">
-              <h4 class="widget-title">Archives</h4>
+              <h4 class="widget-title"><?php echo $speak->widget->archives; ?></h4>
               <div class="widget-content">
                 <?php echo Widget::archive('HIERARCHY'); ?>
               </div>

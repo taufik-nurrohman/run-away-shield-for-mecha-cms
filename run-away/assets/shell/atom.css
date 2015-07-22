@@ -25,7 +25,7 @@ time,mark,audio,video {
 ::-webkit-input-placeholder {
   color:#7C6F6A;
   opacity:1;
-  overflow:visible; /* WebKit only :( */
+  overflow:visible; /* webkit only :( */
   line-height:inherit;
 }
 
@@ -58,9 +58,6 @@ time,mark,audio,video {
 :focus:-moz-placeholder {color:#AC9A93 !important}
 :focus:-ms-input-placeholder {color:#AC9A93 !important}
 :focus:placeholder {color:#AC9A93 !important}
-
-section,nav,article,aside,hgroup,header,footer {display:block}
-mark,time {display:inline}
 
 mark {
   background-color:#FF0;
@@ -356,15 +353,8 @@ optgroup {
 }
 
 optgroup option {
-  margin-left:1em;
+  padding-left:1em;
   font-weight:normal;
-}
-
-label {
-  -webkit-user-select:none;
-  -moz-user-select:none;
-  -ms-user-select:none;
-  user-select:none;
 }
 
 label input:checked + span {opacity:.8}
@@ -423,8 +413,6 @@ table[border="1"] td {
   padding:.5em .8em;
   word-wrap:break-word;
 }
-
-.table-bordered code {white-space:nowrap}
 
 
 /* BLOCKS */
@@ -510,11 +498,6 @@ li > .p + ol + p,
 li > .p + ul + p,
 li > .p + ol + .p,
 li > .p + ul + .p {margin-bottom:0}
-
-.list-unstyled {
-  margin-left:0;
-  list-style:none;
-}
 
 dt {font-size:120%}
 dd {margin-left:1em}

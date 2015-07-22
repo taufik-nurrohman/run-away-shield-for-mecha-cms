@@ -1,8 +1,12 @@
 Title: Run Away
 Author: Taufik Nurrohman
 URL: http://mecha-cms.com
-Version: 1.1.1
+Version: 1.2.0
 
 ====
 
+> Classic, one column.
+
 Minimalist one column shield for personal blog.
+
+<!-- block:donate -->

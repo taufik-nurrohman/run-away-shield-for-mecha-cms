@@ -1,8 +1,12 @@
 Title: Run Away
 Author: Taufik Nurrohman
 URL: http://mecha-cms.com
-Version: 1.1.1
+Version: 1.2.0
 
 ====
 
+> Klasik, satu kolom.
+
 Tameng minimalis satu kolom untuk blog pribadi.
+
+<!-- block:donate -->

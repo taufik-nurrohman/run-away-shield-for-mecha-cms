@@ -1,6 +1,6 @@
-/* AUTHOR BANNER */
+/* MANAGER BAR */
 
-.author-banner {
+.widget-manager-bar {
   position:absolute;
   top:0;
   right:0;
@@ -12,7 +12,7 @@
   padding:0 .6em;
 }
 
-.author-banner a {color:#F2E336}
+.widget-manager-bar {color:#F2E336}
 
 
 /* MANAGER MENU */
@@ -51,7 +51,7 @@
   border-radius:100%;
 }
 
-.widget-manager-menu .fa + span {
+.widget-manager-menu .label {
   position:absolute;
   top:50%;
   right:100%;
@@ -73,7 +73,7 @@
   display:none;
 }
 
-.widget-manager-menu .fa + span:before {
+.widget-manager-menu .label:before {
   content:"";
   display:block;
   width:0;
@@ -92,8 +92,8 @@
   color:#554D48;
 }
 
-.widget-manager-menu a:focus .fa + span,
-.widget-manager-menu a:hover .fa + span {display:block}
+.widget-manager-menu a:focus .label,
+.widget-manager-menu a:hover .label {display:block}
 
 .widget-manager-menu .selected a {
   background-color:#DBCEC9;
@@ -214,7 +214,7 @@ label:hover .radio,
 }
 
 @media (max-width:610px) {
-  .author-banner {
+  .widget-manager-bar {
     left:0;
     background:none;
     background-color:rgba(0,0,0,.2);
