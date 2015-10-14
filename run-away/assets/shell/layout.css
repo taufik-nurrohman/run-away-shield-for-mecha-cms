@@ -1,5 +1,73 @@
 /* GENERALS */
 
+::-webkit-input-placeholder {
+  color:#7C6F6A;
+  opacity:1;
+  overflow:visible; /* webkit only :( */
+  line-height:inherit;
+}
+
+::-moz-placeholder {
+  color:#7C6F6A;
+  opacity:1;
+  line-height:inherit;
+}
+
+:-moz-placeholder {
+  color:#7C6F6A;
+  opacity:1;
+  line-height:inherit;
+}
+
+:-ms-input-placeholder {
+  color:#7C6F6A;
+  opacity:1;
+  line-height:inherit;
+}
+
+:placeholder {
+  color:#7C6F6A;
+  opacity:1;
+  line-height:inherit;
+}
+
+:focus::-webkit-input-placeholder {color:#AC9A93 !important}
+:focus::-moz-placeholder {color:#AC9A93 !important}
+:focus:-moz-placeholder {color:#AC9A93 !important}
+:focus:-ms-input-placeholder {color:#AC9A93 !important}
+:focus:placeholder {color:#AC9A93 !important}
+
+html {
+  font:normal normal 13px/1.3846153846153846em "Droid Serif",Georgia,"URW Bookman L",Serif;
+  overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+body {
+  background-color:#FAF5F2;
+  color:#222;
+}
+
+a {
+  color:#7C0201;
+  text-decoration:none;
+}
+
+a:focus,
+a:hover {color:#346519}
+
+.code,code,pre {font-family:Consolas,"Andale Mono WT","Andale Mono","Lucida Console","Lucida Sans Typewriter","DejaVu Sans Mono","Bitstream Vera Sans Mono","Liberation Mono","Nimbus Mono L",Monaco,"Courier New",Courier,Monospace}
+
+pre {
+  background-color:#DEEBF9;
+  color:#4B5867;
+  -webkit-border-radius:3px;
+  -moz-border-radius:3px;
+  border-radius:3px;
+}
+
+code {font-size:96%}
+
 .blog-wrapper {
   width:700px;
   padding-top:264px;
@@ -20,6 +88,110 @@
   border-style:solid;
   width:7em;
 }
+
+
+/* MISCELLANEOUS */
+
+button,
+input,
+select,
+textarea,
+.btn {
+  border:1px solid #DBCEC9;
+  border-top-color:#BFAFAA;
+  background-color:#F5EEEA;
+  color:black;
+  -webkit-border-radius:2px;
+  -moz-border-radius:2px;
+  border-radius:2px;
+}
+
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"],
+.btn {
+  background-color:#313131;
+  border-color:transparent;
+  border-bottom-color:rgba(0,0,0,.25);
+  color:white;
+  background-image:-webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.05));
+  background-image:-moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.05));
+  background-image:-ms-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.05));
+  background-image:-o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.05));
+  background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.05));
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,.4);
+  -moz-box-shadow:0 1px 1px rgba(0,0,0,.4);
+  box-shadow:0 1px 1px rgba(0,0,0,.4);
+}
+
+button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus,
+.btn:focus,
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover,
+.btn:hover {
+  background-color:#353535;
+  color:white;
+}
+
+button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active,
+.btn:active {
+  background-color:#2D2D2D;
+  border-color:transparent;
+  -webkit-box-shadow:inset 0 2px 1px rgba(0,0,0,.1);
+  -moz-box-shadow:inset 0 2px 1px rgba(0,0,0,.1);
+  box-shadow:inset 0 2px 1px rgba(0,0,0,.1);
+}
+
+.btn-action {background-color:#2C466A}
+.btn-action:focus,
+.btn-action:hover {background-color:#304C72}
+.btn-action:active {background-color:#284062}
+.btn-accept,
+.btn-begin,
+.btn-construct {background-color:#495D19}
+.btn-accept:focus,
+.btn-accept:hover,
+.btn-begin:focus,
+.btn-begin:hover,
+.btn-construct:focus,
+.btn-construct:hover {background-color:#4F641B}
+.btn-accept:active,
+.btn-begin:active,
+.btn-construct:active {background-color:#435617}
+.btn-danger,
+.btn-destruct,
+.btn-error,
+.btn-reject {background-color:#6A2E2E}
+.btn-danger:focus,
+.btn-danger:hover,
+.btn-destruct:focus,
+.btn-destruct:hover,
+.btn-error:focus,
+.btn-error:hover,
+.btn-reject:focus,
+.btn-reject:hover {background-color:#723232}
+.btn-danger:active,
+.btn-destruct:active,
+.btn-error:active,
+.btn-reject:active {background-color:#622A2A}
+
+.table-bordered th,
+.table-bordered td,
+table[border="1"] th,
+table[border="1"] td,
+hr {border-color:#DBCEC9}
+
+.form-label,
+.form-static {border-top:1px solid transparent}
 
 
 /* LOGIN */
@@ -104,7 +276,7 @@
   color:black;
 }
 
-.blog-navigation .selected a {
+.blog-navigation .current a {
   background-color:#F2D14B;
   background-image:-webkit-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
   background-image:-moz-linear-gradient(rgba(255,255,255,.1),rgba(255,255,255,0));
@@ -276,7 +448,7 @@
   color:#AAA;
 }
 
-.comment-form {margin:5% 12% 0 0}
+.comment-form {margin:5% 0 0}
 .comment-form input[name="math"] {width:4em}
 
 
@@ -306,6 +478,48 @@
 
 .widget-content {margin:1.3846153846153846em 0}
 .widget-search input {width:160px}
+
+
+/* TEXT */
+
+.text-fade {color:#AC9A93}
+.text-accept,
+.text-begin,
+.text-construct {color:#495D19}
+.text-info {color:#3C73A6}
+.text-warning {color:#AD5027}
+.text-danger,
+.text-destruct,
+.text-error,
+.text-reject {color:#6A2E2E}
+
+
+/* MESSAGES */
+
+.message {
+  background-color:#EEE;
+  color:#8F8F8F;
+}
+
+.message-success {
+  background-color:#EDF5C4;
+  color:#8E9376;
+}
+
+.message-info {
+  background-color:#E0E8FF;
+  color:#868B99;
+}
+
+.message-warning {
+  background-color:#FCEDE0;
+  color:#978E86;
+}
+
+.message-error {
+  background-color:#FCDBDB;
+  color:#978383;
+}
 
 
 /* SMALLER SCREEN */

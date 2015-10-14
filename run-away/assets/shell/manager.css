@@ -95,7 +95,7 @@
 .widget-manager-menu a:focus .label,
 .widget-manager-menu a:hover .label {display:block}
 
-.widget-manager-menu .selected a {
+.widget-manager-menu .current a {
   background-color:#DBCEC9;
   color:#554D48;
 }
@@ -204,13 +204,13 @@ label:hover .radio,
     margin-left:.4em;
   }
   .widget-manager-menu a {display:inline-block}
-  .widget-manager-menu .fa + span {
+  .widget-manager-menu .label {
     top:auto;
     right:auto;
     bottom:100%;
     left:-.2em;
   }
-  .widget-manager-menu .fa + span:before {display:none}
+  .widget-manager-menu .label:before {display:none}
 }
 
 @media (max-width:610px) {
