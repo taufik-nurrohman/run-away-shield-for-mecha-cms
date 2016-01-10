@@ -1,19 +1,17 @@
-<?php include 'header.php'; ?>
+<?php Shield::chunk('header'); ?>
 <?php if($config->total_articles > 0): ?>
 <?php foreach($articles as $article): ?>
-<article class="post post-index">
-  <p class="post-time"><time datetime="<?php echo $article->date->W3C; ?>"><?php echo $article->date->FORMAT_1; ?></time></p>
-  <h2 class="post-title"><a href="<?php echo $article->url; ?>"><?php echo $article->title; ?></a></h2>
-  <div class="post-body"><?php echo $article->description; ?></div>
+<?php Shield::lot(array('article' => $article)); ?>
+<article class="post post-index" id="post-<?php echo $article->id; ?>">
+  <?php Shield::chunk('article.header.index'); ?>
+  <?php Shield::chunk('article.body.index'); ?>
+  <?php Shield::chunk('article.footer.index'); ?>
 </article>
 <?php endforeach; ?>
-<nav class="blog-pager">
-  <span class="blog-pager-prev"><?php echo $pager->prev->link; ?></span>
-  <span class="blog-pager-next"><?php echo $pager->next->link; ?></span>
-</nav>
 <?php else: ?>
-<article class="post post-index">
-  <div class="post-body"><?php echo Config::speak('notify_empty', strtolower($speak->posts)); ?></div>
+<article class="post">
+  <?php Shield::chunk('article.body.204'); ?>
 </article>
 <?php endif; ?>
-<?php include 'footer.php'; ?>
+<?php Shield::chunk('pager'); ?>
+<?php Shield::chunk('footer'); ?>

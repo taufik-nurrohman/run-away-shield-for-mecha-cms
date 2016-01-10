@@ -1,14 +1,14 @@
 /**
- * ==================================================================================
- *  The following is required to style all general appearance of miscellaneous
- *  elements in page. It may seem that this file contains a lot of things that are
- *  not useful, but this is how I can keep your page layout stable accross browsers.
+ * ============================================================================================
+ *  The following is required to style all general appearance of miscellaneous element in
+ *  page. It may seem that this file contains a lot of things that  not useful, but this is
+ *  how I can keep the page layout appearance stable accross browsers.
  *
- *  If you intend to contribute by making a theme for this CMS, I suggest you
- *  to include this file as a base CSS, so that it can accelerate your work.
+ *  If you intend to contribute by making a theme for this CMS, I suggest you to include this
+ *  file as a base CSS, so that it can accelerate your work.
  *
- *  PS: Excuse me with my CSS writing style. I like to keep them compact like this.
- * ==================================================================================
+ *  PS: Excuse me with my CSS writing style. I like to keep everything compact like this.
+ * ============================================================================================
  *
  *  @base-font-size: 13px;
  *  @base-line-height: 18px;
@@ -16,7 +16,7 @@
  */
 
 
-/* RESETS */
+/* RESET */
 
 html,body,div,span,object,iframe,hr,
 h1,h2,h3,h4,h5,h6,p,blockquote,pre,
@@ -121,11 +121,10 @@ abbr,dfn {
   cursor:help;
 }
 
-abbr[title],dfn[title] {border-bottom:1px solid transparent}
-abbr[title]:hover,dfn[title]:hover {border-bottom:1px solid}
+abbr[title],dfn[title] {border-bottom:1px dotted}
 
 
-/* FORM ELEMENTS */
+/* FORM */
 
 button,
 input,
@@ -138,10 +137,11 @@ textarea,
   display:inline-block;
   width:15.384615384615385em;
   vertical-align:middle;
-  padding:.7692307692307693em;
+  padding:.38461538461538464em;
   margin:0;
   font:inherit;
   line-height:normal;
+  background:none;
   border:none;
   text-align:left;
 }
@@ -149,8 +149,8 @@ textarea,
 button {overflow:visible}
 
 select {
-  padding-top:.6923076923076923em;
-  padding-bottom:.6923076923076923em;
+  padding-top:.3076923076923077em;
+  padding-bottom:.3076923076923077em;
 }
 
 button::-moz-focus-inner,
@@ -178,8 +178,8 @@ input[type="submit"],
   cursor:pointer;
   text-align:center;
   text-decoration:none;
-  padding-left:.9230769230769231em;
-  padding-right:.9230769230769231em;
+  padding-left:.6153846153846154em;
+  padding-right:.6153846153846154em;
   -webkit-user-select:none;
   -moz-user-select:none;
   -ms-user-select:none;
@@ -199,18 +199,6 @@ fieldset[disabled] .btn {
   cursor:not-allowed;
   opacity:.9;
 }
-
-.btn-small,
-.input-small,
-.select-small,
-.textarea-small {
-  padding:.6261180679785331em .7155635062611807em;
-  font-size:86%;
-}
-
-.btn-small {padding:.6261180679785331em .8944543828264758em}
-.select-small {padding:.5366726296958855em .6261180679785331em}
-.textarea-small {line-height:normal}
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -275,8 +263,8 @@ label input:checked + span {opacity:.8}
 .form-label,
 .form-static {
   display:block;
-  padding-top:.7692307692307693em;
-  padding-bottom:.7692307692307693em;
+  padding-top:.38461538461538464em;
+  padding-bottom:.38461538461538464em;
   line-height:normal;
 }
 
@@ -299,7 +287,7 @@ legend {
 }
 
 
-/* TABLES */
+/* TABLE */
 
 table {
   border-collapse:collapse;
@@ -327,7 +315,7 @@ table[border="1"] td {
 }
 
 
-/* BLOCKS */
+/* CODE */
 
 pre {
   overflow:auto;
@@ -345,6 +333,9 @@ pre code {
   font-size:100%;
   color:inherit;
 }
+
+
+/* BLOCK */
 
 iframe {
   display:block;
@@ -384,7 +375,7 @@ dt {font-size:120%}
 dd {margin-left:1em}
 
 
-/* ALIGNMENTS */
+/* ALIGNMENT */
 
 .align-left {
   margin-right:1.3846153846153846em;
@@ -404,15 +395,4 @@ dd {margin-left:1em}
 img {
   max-width:100%;
   height:auto;
-}
-
-
-/* MESSAGES */
-
-.messages {margin:0 0 1.3846153846153846em}
-
-.message {
-  margin:0 0 2px;
-  padding:.7692307692307693em .9230769230769231em;
-  overflow:hidden;
 }

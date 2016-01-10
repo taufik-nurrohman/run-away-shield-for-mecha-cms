@@ -1,27 +1,23 @@
 <?php
 
-// Link generator for the current article tags
-Widget::add('tagLinks', function($connect = ', ') use($speak) {
-    $config = Config::get();
+Widget::add('tagLinks', function($connect = ', ') use($config, $speak) {
     $links = array();
-    $source = $config->article->tags;
-    if( ! isset($source) || ! is_object($source)) return "";
-    foreach($source as $tag) {
+    $article = Shield::lot('article');
+    if( ! $article || ! isset($article->tags)) return "";
+    foreach($article->tags as $tag) {
         if($tag && $tag->id !== 0) {
-            $links[] = '<a href="' . $config->url . '/' . $config->tag->slug . '/' . $tag->slug . '" rel="tag">' . $tag->name . '</a>';
+            $url = Filter::colon('tag:url', $config->url . '/' . $config->tag->slug . '/' . $tag->slug);
+            $links[] = '<a href="' . $url . '" rel="tag">' . $tag->name . '</a>';
         }
     }
     $text = count($links) > 1 ? $speak->tags : $speak->tag;
     return ! empty($links) ? $text . ': ' . implode($connect, $links) : "";
 });
 
-// Remove all icons in status messages
-if(strpos($config->url_current, $config->url . '/' . $config->manager->slug . '/') !== 0) {
-    Notify::configure('icons', array(
-        'default' => "",
-        'success' => "",
-        'info' => "",
-        'warning' => "",
-        'error' => ""
-    ));
-}
+Filter::add('chunk:output', function($content, $path) {
+    $name = File::N($path);
+    if($name === 'block.footer') {
+        $content = str_replace('<div class="blog-footer-right">', '<div class="blog-footer-right">Background: <a href="http://www.freeimages.com/photo/1092493" re="nofollow" target="_blank">Running Track</a> &middot; ', $content);
+    }
+    return $content;
+});

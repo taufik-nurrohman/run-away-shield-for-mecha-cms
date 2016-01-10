@@ -7,12 +7,9 @@
   z-index:10;
   height:2em;
   line-height:2em;
-  background-color:black;
-  color:white;
+  background-color:white;
   padding:0 .6em;
 }
-
-.widget-manager-bar {color:#F2E336}
 
 
 /* MANAGER MENU */
@@ -51,7 +48,8 @@
   border-radius:100%;
 }
 
-.widget-manager-menu .label {
+.widget-manager-menu .label,
+.widget-manager-menu .counter {
   position:absolute;
   top:50%;
   right:100%;
@@ -73,7 +71,14 @@
   display:none;
 }
 
-.widget-manager-menu .label:before {
+.widget-manager-menu .counter {
+  display:block;
+  background-color:#B33727;
+  border-color:#B33727;
+}
+
+.widget-manager-menu .label:before,
+.widget-manager-menu .counter:before {
   content:"";
   display:block;
   width:0;
@@ -86,6 +91,8 @@
   margin-top:-4px;
 }
 
+.widget-manager-menu .counter:after {display:none}
+
 .widget-manager-menu a:focus,
 .widget-manager-menu a:hover {
   background-color:#FAF5F2;
@@ -94,6 +101,9 @@
 
 .widget-manager-menu a:focus .label,
 .widget-manager-menu a:hover .label {display:block}
+
+.widget-manager-menu a:focus .counter,
+.widget-manager-menu a:hover .counter {display:none}
 
 .widget-manager-menu .current a {
   background-color:#DBCEC9;
@@ -113,26 +123,28 @@
 
 /* TAB */
 
-.tab,
-.tab:focus,
-.tab:hover {
+.tab-button,
+.tab-button:focus,
+.tab-button:hover {
   color:#7C6F6A;
-  -webkit-border-radius:4px 4px 0 0;
-  -moz-border-radius:4px 4px 0 0;
-  border-radius:4px 4px 0 0;
+  margin-right:0;
+  margin-left:0;
 }
 
-.tab.active {color:inherit}
+.tab-button + .tab-button {border-left-width:0}
+.tab-button.active {color:inherit}
 
-.tab,
-.tab.active:before,
-.tab.active:after {
+.tab-button,
+.tab-button.active:before,
+.tab-button.active:after {
   border-color:#DBCEC9;
   background:white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAfBAMAAADU57pRAAAAG1BMVEX9+/v7+Pf69fP28Oz////48vD07Ojz6uX17uops5KuAAAAIUlEQVQI12NwYCgAwwQwbABCAygMAEMFKBSAQjgA6nQAABEtBqHudYomAAAAAElFTkSuQmCC') repeat-x 0 0;
 }
 
-.tab abbr,
-.tab dfn {border:none}
+.tab-button.active {background-image:none}
+
+.tab-button abbr,
+.tab-button dfn {border:none}
 
 
 /* CHECKBOX & RADIO */
@@ -225,8 +237,8 @@ label:hover .radio,
 
 @media (max-width:580px) {
   .widget-manager-menu li {width:50%}
-  .blog-wrapper .tab-area {height:auto}
-  .blog-wrapper .tab {
+  .blog-wrapper .tab-button-area {height:auto}
+  .blog-wrapper .tab-button {
     float:none;
     display:block;
     width:auto;
@@ -236,6 +248,6 @@ label:hover .radio,
     -moz-border-radius:3px;
     border-radius:3px;
   }
-  .blog-wrapper .tab.active:before,
-  .blog-wrapper .tab.active:after {display:none}
+  .blog-wrapper .tab-button.active:before,
+  .blog-wrapper .tab-button.active:after {display:none}
 }

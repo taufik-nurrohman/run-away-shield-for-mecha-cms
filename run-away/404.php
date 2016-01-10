@@ -1,6 +1,5 @@
-<?php include 'header.php'; ?>
+<?php Shield::chunk('header'); ?>
 <article class="post">
-  <h2 class="post-title">404</h2>
-  <div class="post-body"><p><?php echo $speak->page . ' ' . strtolower($speak->notify_error_not_found); ?></p></div>
+  <?php Shield::chunk('page.body.404'); ?>
 </article>
-<?php include 'footer.php'; ?>
+<?php Shield::chunk('footer'); ?>
