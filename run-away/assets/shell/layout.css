@@ -99,7 +99,7 @@ textarea,
 .btn {
   border:1px solid #DBCEC9;
   border-top-color:#BFAFAA;
-  background-color:#F5EEEA;
+  background:white url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAfBAMAAADU57pRAAAAG1BMVEX9+/v7+Pf69fP28Oz////48vD07Ojz6uX17uops5KuAAAAIUlEQVQI12NwYCgAwwQwbABCAygMAEMFKBSAQjgA6nQAABEtBqHudYomAAAAAElFTkSuQmCC') repeat-x 0 -10px;
   color:black;
   -webkit-border-radius:2px;
   -moz-border-radius:2px;
@@ -120,12 +120,13 @@ input[type="submit"],
   background-image:-ms-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1));
   background-image:-o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1));
   background-image:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.1));
+  background-position:0 0;
+  -webkit-box-shadow:0 0 1px rgba(0,0,0,.4);
+  -moz-box-shadow:0 0 1px rgba(0,0,0,.4);
+  box-shadow:0 0 1px rgba(0,0,0,.4);
   -webkit-border-radius:4px;
   -moz-border-radius:4px;
   border-radius:4px;
-  -webkit-box-shadow:0 1px 1px rgba(0,0,0,.4);
-  -moz-box-shadow:0 1px 1px rgba(0,0,0,.4);
-  box-shadow:0 1px 1px rgba(0,0,0,.4);
 }
 
 button:focus,
@@ -138,6 +139,9 @@ input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
 .btn:hover {
+  -webkit-box-shadow:0 1px 1px rgba(0,0,0,.4);
+  -moz-box-shadow:0 1px 1px rgba(0,0,0,.4);
+  box-shadow:0 1px 1px rgba(0,0,0,.4);
   background-color:#353535;
   color:white;
 }
