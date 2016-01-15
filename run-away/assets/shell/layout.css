@@ -393,6 +393,8 @@ table[border="1"] th {background-color:#FAF5F2}
   position:relative;
 }
 
+.comments-footer {margin:5% 0 0 0}
+
 .comment {
   margin:0;
   padding:1em 0 1em 1em;
@@ -463,7 +465,6 @@ table[border="1"] th {background-color:#FAF5F2}
   color:#AC9A93;
 }
 
-.comment-form {margin:5% 0 0 0}
 .comment-form input[name="math"] {width:4em}
 
 
