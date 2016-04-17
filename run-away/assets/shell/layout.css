@@ -574,15 +574,21 @@ table[border="1"] th {background-color:#FAF5F2}
 
 @media (max-width:700px) {
   .blog-wrapper {width:auto}
-  .grid-group .grid {
-    float:none;
-    display:block;
-    width:auto;
+  .grid-group {
     margin-right:0;
     margin-left:0;
   }
-  .grid-group .form-label {
-    text-align:left;
+  .grid {
+    float:none;
+    display:block;
+    width:auto;
+    margin:0;
+    padding:0;
+    text-align:inherit;
+  }
+  .grid.form-label {
+    line-height:inherit;
     margin-bottom:1.3846153846153846em;
   }
+  .grid:empty {display:none}
 }
